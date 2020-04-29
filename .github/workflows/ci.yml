@@ -1,9 +1,9 @@
-name: Hello, World!
+name: hoge ci
 on: push
 
 jobs:
   build:
-    name: Greeting
+    name: hoge
     runs-on: ubuntu-latest
     env:
      USER_NAME : "hoge"
