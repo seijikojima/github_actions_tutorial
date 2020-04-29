@@ -9,6 +9,6 @@ jobs:
     USER_NAME : "hoge"
    steps:
     - run : pwd
-    - run : cp README.md ./
+    - COPY : README.md ./
     - run : cat README.md
     #  - run : echo "secret user name : ${{secrets.USER_NAME}}"
