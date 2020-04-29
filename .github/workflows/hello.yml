@@ -9,6 +9,8 @@ jobs:
      USER_NAME : "hoge"
     steps:
      - run : echo "hogehoge"
+     - run : cat hoge.txt
+     - run : echo hoge.txt
      - run : cat README.md
     #  - run : cat README.md
   
