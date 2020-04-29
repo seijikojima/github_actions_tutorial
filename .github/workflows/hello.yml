@@ -11,6 +11,8 @@ jobs:
     env:
      USER_NAME : "hoge"
     steps:
+     - name : "test"
+     - uses : master
      - run : ls     
      - run : echo "fugafuga"
      - run : cat fuga.txt
