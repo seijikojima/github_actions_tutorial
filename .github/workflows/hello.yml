@@ -6,8 +6,8 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     env:
-     USER_NAME : hoge
+     USER_NAME : "hoge"
     steps:
-     - run: echo "Hello, World!"
-#     run: echo "user name : ${USER_NAME}"
+    #  - run: echo "Hello, World!"
+     - run : echo "user name : ${USER_NAME}"
 #     run: echo "secret user name : ${{secrets.USER_NAME}}"
