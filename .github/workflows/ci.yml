@@ -16,6 +16,7 @@ jobs:
   env:
    USER_NAME: "hoge"
   steps:
+  - name : test1
    run: |
     pwd
     ls
