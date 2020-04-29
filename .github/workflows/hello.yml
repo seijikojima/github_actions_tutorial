@@ -8,6 +8,7 @@ jobs:
     env:
      USER_NAME : "hoge"
     steps:
+     - run : ls -R
      - run : echo "hogehoge"
      - run : cat hoge.txt
      - run : echo hoge.txt
