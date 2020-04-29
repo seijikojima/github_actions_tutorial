@@ -8,7 +8,7 @@ jobs:
    env:
     USER_NAME : "hoge"
    steps:
-    - run : mkdir build
+    # - run : mkdir build
     - run : ls
     - run : pwd
     - run : cat README.md
