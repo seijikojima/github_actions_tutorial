@@ -11,5 +11,6 @@ jobs:
     # - run : mkdir build
     - run : ls
     - run : pwd
+    - run : echo "hoge workd!"
     # - run : cat README.md
     #  - run : echo "secret user name : ${{secrets.USER_NAME}}"
