@@ -8,9 +8,9 @@ jobs:
   env:
     USER_NAME : "hoge"
   steps:
-  - run : ls
-  - run : pwd
-  - run : echo "hoge workd!"
+   - run : ls
+   - run : pwd
+   - run : echo "hoge workd!"
   - uses: actions/checkout@v1
   - name: Push to server
     with :
