@@ -11,8 +11,8 @@ jobs:
    - run : ls
    - run : pwd
    - run : echo "hoge workd!"
-  - uses: actions/checkout@v1
-  - name: Push to server
+   - uses: actions/checkout@v1
+   - name: Push to server
     with :
       host: ${{ secrets.SERVER_IP }}
       username: ${{ secrets.SERVER_USERNAME }}
