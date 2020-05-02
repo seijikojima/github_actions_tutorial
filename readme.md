@@ -6,10 +6,9 @@ https://seijikojima.github.io/github_actions_tutorial/ に公開されている�
 
 ## 行いたいことリスト
 
-* vpsにssh越しにvue.js,node.js,flask-appをdeploy
-  * 定期的に各アプリのrepositoryをcloneしてrestart
-  * webhookを利用して，pushされたらserver側でdeploy起動．
-* dockerを利用してdeploy
+* vpsにssh経由でvue.js,node.js,flask-appなどのapplicationをdeploy
+  * vps内のrepositoryに入って，pull (できた)
+* dockerを利用してdeployß
   * server側でgit clone, docker build & run 
   * docker hubを利用してdeploy
 * kubernetesを利用
