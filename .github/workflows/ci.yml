@@ -13,7 +13,7 @@ jobs:
     - run : pwd
     - run : echo "hoge workd!"
     - name: Push to server
-      uses: master
+      uses: seijikojima/github_actions/tutorial@master
       with :
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USERNAME }}
