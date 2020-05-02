@@ -32,6 +32,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run : pwd
 
     - name: Checkout
       uses: actions/checkout@v1
