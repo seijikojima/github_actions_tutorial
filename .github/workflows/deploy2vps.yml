@@ -43,4 +43,8 @@ jobs:
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
-        script: cd ${{ secrets.PROJECT_PATH }} && git pull && mkdir hoge
+        script: |
+          whoami
+          pwd
+          ls -l
+          cd ${{ secrets.PROJECT_PATH }} && git pull && mkdir hoge
