@@ -12,6 +12,8 @@ jobs:
     - run : ls
     - run : pwd
     - run : echo "hoge workd!"
+    - name: Push to server
+     uses: master
      with :
       host: ${{ secrets.SERVER_IP }}
       username: ${{ secrets.SERVER_USERNAME }}
