@@ -13,7 +13,7 @@ jobs:
    - run : echo "hoge workd!"
    - uses: actions/checkout@v1
    - name: Push to server
-    with :
+   - with :
      host: ${{ secrets.SERVER_IP }}
      username: ${{ secrets.SERVER_USERNAME }}
      password: ${{ secrets.SERVER_PASSWORD }}
