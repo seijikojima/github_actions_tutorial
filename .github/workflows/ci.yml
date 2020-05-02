@@ -12,5 +12,8 @@ jobs:
     - run : ls
     - run : pwd
     - run : echo "hoge workd!"
-    # - run : cat README.md
-    #  - run : echo "secret user name : ${{secrets.USER_NAME}}"
+     with :
+      host: ${{ secrets.SERVER_IP }}
+      username: ${{ secrets.SERVER_USERNAME }}
+      password: ${{ secrets.SERVER_PASSWORD }}
+      script: cd ${{ secrets.PROJECT_PATH }} && git pull
